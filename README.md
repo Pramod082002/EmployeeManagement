@@ -14,16 +14,16 @@
 * Lombok
 
 ### API Description:
-## Employee DB (PostgreSQL):
- * Create: /api/emp/employees  (POST)
+## Employee DB (PostgreSQL): 
+ * Create: /api/emp/employees  (POST) {"body": firstName, lastName, email, departmentId }
  * Read: /api/emp/employees  (GET) .  /api/emp/employees/{id}  (GET)
- * Update: /api/emp/employees/{id}  (PUT)
+ * Update: /api/emp/employees/{id}  (PUT) {"body": firstName, lastName, email, departmentId }
  * Delete:/api/emp/employees/{id}  (DELETE)
 -------------------------------------------------------------------------------------
 ## Department DB (MongoDB):
- * Create: /api/dept/department  (POST)
+ * Create: /api/dept/department  (POST) {"body": departmentName}
  * Read: /api/dept/department  (GET) .  /api/dept/department/{id}  (GET)
- * Update: /api/dept/department/{id}  (PUT)
+ * Update: /api/dept/department/{id}  (PUT) {"body": departmentName}
  * Delete:/api/dept/department/{id}  (DELETE)
 
  ## Installation locally & Run
@@ -52,6 +52,7 @@
 
 ```
 * Open the main class and run as Java application from your IDE.
+* Use postman for testing the API's.
 
 
 
